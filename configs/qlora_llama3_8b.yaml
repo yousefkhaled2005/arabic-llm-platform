@@ -1,0 +1,29 @@
+base_model: "meta-llama/Meta-Llama-3-8B-Instruct"
+model_type: "AutoModelForCausalLM"
+tokenizer_type: "AutoTokenizer"
+
+load_in_4bit: true
+adapter: "lora"
+lora_r: 32
+lora_alpha: 64
+lora_dropout: 0.05
+lora_target_modules:
+  - "q_proj"
+  - "k_proj"
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+
+sequence_len: 4096
+gradient_accumulation_steps: 4
+micro_batch_size: 2
+num_epochs: 3
+optimizer: "adamw_bnb_8bit"
+lr_scheduler: "cosine"
+learning_rate: 0.0002
+
+gradient_checkpointing: true
+flash_attention: true
+output_dir: "./checkpoints/arabic-llama3-qlora"
