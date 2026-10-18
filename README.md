@@ -1,3 +1,15 @@
+# Arabic LLM Platform & Instruction Fine-Tuning Suite
+
+[![CI](https://github.com/yousefkhaled2005/arabic-llm-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/yousefkhaled2005/arabic-llm-platform)
+[![Dataset](https://img.shields.io/badge/Dataset-52K%20Alpaca%20%2B%20Arabic%20DPO-orange.svg)](data/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x%20%7C%20PEFT%20%7C%20TRL-red.svg)](finetune.py)
+[![Serving](https://img.shields.io/badge/Serving-vLLM%20PagedAttention-green.svg)](scripts/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+An enterprise-scale Large Language Model alignment and instruction-tuning suite engineered by **Yousef Khaled**. Incorporates full 52,000 instruction-following datasets, parameter-efficient fine-tuning (QLoRA 4-bit SFT + DPO), Hugging Face TRL trainers, and high-throughput vLLM serving with PagedAttention.
+
+---
+
 # Enterprise Arabic LLM Platform (QLoRA + DPO Fine-Tuning & Serving)
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
